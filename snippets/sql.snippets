@@ -1,0 +1,21 @@
+snippet set
+	SET QUOTED_IDENTIFIER ON
+	SET ANSI_PADDING ON
+	SET ANSI_NULLS ON
+	SET NOCOUNT ON
+	GO
+
+snippet nn
+	NOT NULL
+
+snippet pk
+	CONSTRAINT [PK_${1:TableName}] PRIMARY KEY (${2:Id}),
+
+snippet uk
+	CONSTRAINT [U_${1:TableName}] UNIQUE (${2:columns}),
+
+snippet atfk
+	ALTER TABLE [${1:dbo}].[${2:ChildTable}]
+		CONSTRAINT [FK_$2_$5]
+		FOREIGN KEY (${3:Columns})
+		REFERENCES [${4:$1}].[${5:ParentTable}] (${6:$3})
