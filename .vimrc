@@ -26,6 +26,9 @@ set nowrap
 filetype indent plugin on
 syntax enable
 autocmd BufNewFile,BufRead *.vb set ft=vbnet
+autocmd BufNewFile,BufRead *.ps1 set ft=ps1
 autocmd BufNewFile,BufRead *.psm1 set ft=ps1
+autocmd FileType HTML set inde=""
+autocmd FileType JAVASCRIPT set inde="" nocin
 
 command! -nargs=1 -range SuperRetab <line1>,<line2>s/\v%(^ *)@<= {<args>}/\t/g
