@@ -32,3 +32,7 @@ autocmd FileType HTML set inde=""
 autocmd FileType JAVASCRIPT set inde="" nocin
 
 command! -nargs=1 -range SuperRetab <line1>,<line2>s/\v%(^ *)@<= {<args>}/\t/g
+
+inoremap hh <ESC>
+nnoremap <ESC><ESC> :noh<CR>
+nnoremap <silent> ,cd :cd %:p:h<CR>
