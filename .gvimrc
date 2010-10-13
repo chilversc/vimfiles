@@ -13,4 +13,4 @@ end
 
 set anti
 set columns=140 lines=40
-set gtl=%t gtt=%F
+set gtl=%N\:\ %t gtt=%F
