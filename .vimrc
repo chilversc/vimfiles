@@ -50,8 +50,8 @@ noremap { [{
 noremap } ]}
 noremap ( [(
 noremap ) ])
-noremap ]] ]z
-noremap [[ [z
+noremap [[ zk
+noremap ]] zj
 
 " Recursively collapse all folds with in the current fold
 nnoremap zh [zV]zzC``zv
