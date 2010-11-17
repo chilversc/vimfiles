@@ -6,7 +6,7 @@ if has("gui_macvim")
 	set guioptions-=T
 	set stal=2
 elseif has("gui_win32")
-	set guifont=Consolas:h12
+	set guifont=Consolas:h14
 	set guioptions-=T
 	set guioptions-=m
 end
