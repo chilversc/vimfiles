@@ -15,6 +15,12 @@ set noexpandtab
 set listchars=tab:»\ ,eol:¤,trail:·,extends:…,precedes:…
 set list
 
+if exists("+relativenumber")
+	set relativenumber
+else 
+	set number
+end
+
 set showmatch
 set nohls
 set incsearch
