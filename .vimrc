@@ -29,6 +29,7 @@ syntax enable
 autocmd BufNewFile,BufRead *.vb set ft=vbnet
 autocmd BufNewFile,BufRead *.ps1 set ft=ps1
 autocmd BufNewFile,BufRead *.psm1 set ft=ps1
+autocmd BufNewFile,BufRead *.*proj set ft=xml
 autocmd FileType HTML set inde=""
 autocmd FileType JAVASCRIPT set inde="" nocin
 
