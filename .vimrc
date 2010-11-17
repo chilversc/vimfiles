@@ -13,6 +13,7 @@ set tabstop=4
 set shiftwidth=4
 set noexpandtab
 set listchars=tab:»\ ,eol:¤,trail:·,extends:…,precedes:…
+set list
 
 set showmatch
 set nohls
