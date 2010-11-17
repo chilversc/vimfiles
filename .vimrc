@@ -46,5 +46,10 @@ inoremap hh <ESC>
 nnoremap <ESC><ESC> :noh<CR>
 nnoremap <silent> ,cd :cd %:p:h<CR>
 
+noremap { [{
+noremap } ]}
+noremap ( [(
+noremap ) ])
+
 " Recursively collapse all folds with in the current fold
 nnoremap zh [zV]zzC``zv
