@@ -38,3 +38,6 @@ command! -nargs=1 -range SuperRetab <line1>,<line2>s/\v%(^ *)@<= {<args>}/\t/g
 inoremap hh <ESC>
 nnoremap <ESC><ESC> :noh<CR>
 nnoremap <silent> ,cd :cd %:p:h<CR>
+
+" Recursively collapse all folds with in the current fold
+nnoremap zh [zV]zzC``zv
