@@ -27,6 +27,11 @@ syn sync minlines=100
 " Comments and special comment words
 syn keyword ps1CommentTodo TODO FIXME XXX TBD HACK contained
 syn match ps1Comment /#.*/ contains=ps1CommentTodo
+syn match ps1CommentHelp /\.\(synopsis\|description\|parameter\|example\|inputs\)/ contained display
+syn match ps1CommentHelp /\.\(outputs\|notes\|link\|component\|role\|functionality\)/ contained display
+syn match ps1CommentHelp /\.\(forwardhelptargetname\|forwardhelpcategory\)/ contained display
+syn match ps1CommentHelp /\.\(remotehelprunspace\|externalhelp\)/ contained display
+syn region ps1MultiLineComment start=/<#/ end=/#>/ fold contains=ps1CommentHelp
 
 " Language keywords and elements
 syn keyword ps1Conditional if else elseif switch
@@ -61,8 +66,8 @@ syn keyword ps1Operator and or band bor not
 syn keyword ps1Operator f
 
 " Regular Strings
-syn region ps1String start=/"/ skip=/`"/ end=/"/ 
-syn region ps1String start=/'/ end=/'/  
+syn region ps1String start=/"/ skip=/`"/ end=/"/
+syn region ps1String start=/'/ end=/'/
 
 " Here-Strings
 syn region ps1String start=/@"$/ end=/^"@$/
@@ -91,7 +96,9 @@ if version >= 508 || !exists("did_ps1_syn_inits")
   HiLink ps1StandaloneType Type
   HiLink ps1Number Number
   HiLink ps1Comment Comment
+  HiLink ps1MultiLineComment Comment
   HiLink ps1CommentTodo Todo
+  HiLink ps1CommentHelp SpecialComment
   HiLink ps1Operator Operator
   HiLink ps1Repeat Repeat
   HiLink ps1RepeatAndCmdlet Repeat
