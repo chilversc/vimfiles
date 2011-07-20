@@ -44,8 +44,12 @@ command! -nargs=1 -range SuperRetab <line1>,<line2>s/\v%(^ *)@<= {<args>}/\t/g
 
 inoremap hh <ESC>
 nnoremap <ESC><ESC> :noh<CR>
-nnoremap <silent> ,cd :cd %:p:h<CR>
+nnoremap <silent> <Leader>cd :cd %:p:h<CR>
+nnoremap <silent> <Leader>nt :NERDTreeToggle<CR>
+nnoremap <silent> <leader>nc :NERDTreeClose<CR>
 
+noremap <PageUp> <C-U>
+noremap <PageDown> <C-D>
 noremap { [{
 noremap } ]}
 noremap ( [(
