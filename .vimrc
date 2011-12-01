@@ -39,6 +39,7 @@ autocmd BufNewFile,BufRead *.vb set ft=vbnet
 autocmd BufNewFile,BufRead *.ps1 set ft=ps1
 autocmd BufNewFile,BufRead *.psm1 set ft=ps1
 autocmd BufNewFile,BufRead *.*proj set ft=xml
+autocmd BufNewFile,BufRead *.cshtml set ft=html
 autocmd FileType HTML set indentexpr= foldmethod=indent
 autocmd FileType JAVASCRIPT set indentexpr= nocindent foldmethod=indent
 
