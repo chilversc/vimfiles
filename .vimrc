@@ -51,6 +51,9 @@ nnoremap <silent> <Leader>cd :cd %:p:h<CR>
 nnoremap <silent> <Leader>nt :NERDTreeToggle<CR>
 nnoremap <silent> <leader>nc :NERDTreeClose<CR>
 
+let g:nf_map_next = '<Leader>fn'
+let g:nf_map_previous = '<Leader>fp'
+
 noremap <PageUp> <C-U>
 noremap <PageDown> <C-D>
 noremap { [{
